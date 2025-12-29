@@ -12,7 +12,7 @@ Project ini disusun oleh:
 ## Gambaran Proyek
 Penelitian ini bertujuan untuk menganalisis perbandingan kompleksitas waktu (**Time Complexity**) antara dua algoritma pengurutan dengan pendekatan yang berbeda[cite: 5]:
 1.  **Bubble Sort** (Iteratif): Algoritma sederhana dengan kompleksitas $O(n^2)$
-2.  **Merge Sort** (Rekursif): Algoritma *Divide & Conquer* dengan kompleksitas $O(n \log n)
+2.  **Merge Sort** (Rekursif): Algoritma *Divide & Conquer* dengan kompleksitas O(n log n)
 
 Kami melakukan pengujian empiris menggunakan Python dengan variasi ukuran input ($n$): `10, 20, 100, 1.000, hingga 10.000` data acak.
 
@@ -36,11 +36,11 @@ Berdasarkan pengujian yang telah dilakukan, berikut adalah data waktu eksekusi (
     Terjadi ledakan perbedaan waktu yang sangat signifikan.
     * **Bubble Sort** memakan waktu hingga **~7,5 detik**.
     * **Merge Sort** hanya butuh **~0,02 detik**.
-    * Ini membuktikan teori bahwa pertumbuhan waktu Bubble Sort bersifat kuadratik ($n^2$), sedangkan Merge Sort jauh lebih efisien dan stabil
+    * Ini membuktikan teori bahwa pertumbuhan waktu Bubble Sort bersifat kuadratik ($n^2$), sedangkan Merge Sort jauh lebih efisien dan stabil.
 
-## 📝 Kesimpulan
-* **Bubble Sort (Iteratif)** memiliki kompleksitas $O(n^2)$, sehingga **kurang efisien** dan tidak direkomendasikan untuk pengurutan data dalam skala besar
-* **Merge Sort (Rekursif)** terbukti memiliki kompleksitas $O(n \log n)$ yang **lebih efisien dan stabil** terhadap pertambahan jumlah data
-* Untuk aplikasi dunia nyata dengan data besar, **Merge Sort** adalah pilihan yang jauh lebih baik dibandingkan Bubble Sort
-* 
+## Kesimpulan
+* **Bubble Sort (Iteratif)** memiliki kompleksitas $O(n^2)$, sehingga **kurang efisien** dan tidak direkomendasikan untuk pengurutan data dalam skala besar.
+* **Merge Sort (Rekursif)** terbukti memiliki kompleksitas O(n log n) yang **lebih efisien dan stabil** terhadap pertambahan jumlah data.
+* Untuk aplikasi dunia nyata dengan data besar, **Merge Sort** adalah pilihan yang jauh lebih baik dibandingkan Bubble Sort.
+
 *Referensi Teori: GeeksforGeeks & Big-O Cheat Sheet*
