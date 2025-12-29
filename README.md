@@ -1,22 +1,20 @@
 # ANALISIS KOMPLEKSITAS ALGORITMA: Bubble Sort (Iteratif) vs Merge Sort (Rekursif)
 
-> **Tugas Besar Analisis Kompleksitas Algoritma**
-> [cite_start]Studi Kasus: Perbandingan Efisiensi Pengurutan Data [cite: 1, 2]
+**Tugas Besar Analisis Kompleksitas Algoritma**
+Studi Kasus: Perbandingan Efisiensi Pengurutan Data 
 
 ## Tim Pengembang
 Project ini disusun oleh:
-1. [cite_start]**Andi Muhammad Abid Jaya** (103132400014) 
-2. [cite_start]**Abdullah Ahmad Izzah** (103132430024) 
-3. [cite_start]**Nur Tsalits Alwan Mubarok** (103132400039) 
-
----
+1. **Andi Muhammad Abid Jaya** (103132400014) 
+2. **Abdullah Ahmad Izzah** (103132430024) 
+3. **Nur Tsalits Alwan Mubarok** (103132400039) 
 
 ## Gambaran Proyek
-[cite_start]Penelitian ini bertujuan untuk menganalisis perbandingan kompleksitas waktu (**Time Complexity**) antara dua algoritma pengurutan dengan pendekatan yang berbeda[cite: 5]:
-1.  [cite_start]**Bubble Sort** (Iteratif): Algoritma sederhana dengan kompleksitas $O(n^2)$[cite: 6, 34].
-2.  [cite_start]**Merge Sort** (Rekursif): Algoritma *Divide & Conquer* dengan kompleksitas $O(n \log n)$[cite: 6, 35].
+Penelitian ini bertujuan untuk menganalisis perbandingan kompleksitas waktu (**Time Complexity**) antara dua algoritma pengurutan dengan pendekatan yang berbeda[cite: 5]:
+1.  **Bubble Sort** (Iteratif): Algoritma sederhana dengan kompleksitas $O(n^2)$
+2.  **Merge Sort** (Rekursif): Algoritma *Divide & Conquer* dengan kompleksitas $O(n \log n)
 
-[cite_start]Kami melakukan pengujian empiris menggunakan Python dengan variasi ukuran input ($n$): `10, 20, 100, 1.000, hingga 10.000` data acak.
+Kami melakukan pengujian empiris menggunakan Python dengan variasi ukuran input ($n$): `10, 20, 100, 1.000, hingga 10.000` data acak.
 
 ## Hasil Eksperimen
 Berdasarkan pengujian yang telah dilakukan, berikut adalah data waktu eksekusi (dalam milidetik):
@@ -29,7 +27,7 @@ Berdasarkan pengujian yang telah dilakukan, berikut adalah data waktu eksekusi (
 | **1.000** | 3.299 ms | 98.455 ms |
 | **10.000** | **23.16 ms** | **7.494,96 ms** |
 
-[cite_start]*(Data diambil dari hasil running program pada laporan tugas besar)* 
+*(Data diambil dari hasil running program pada laporan tugas besar)* 
 
 ### Analisis Data
 1.  **Pada Data Kecil ($n \le 20$):**
@@ -38,11 +36,11 @@ Berdasarkan pengujian yang telah dilakukan, berikut adalah data waktu eksekusi (
     Terjadi ledakan perbedaan waktu yang sangat signifikan.
     * **Bubble Sort** memakan waktu hingga **~7,5 detik**.
     * **Merge Sort** hanya butuh **~0,02 detik**.
-    * Ini membuktikan teori bahwa pertumbuhan waktu Bubble Sort bersifat kuadratik ($n^2$), sedangkan Merge Sort jauh lebih efisien dan stabil[cite: 36, 35].
+    * Ini membuktikan teori bahwa pertumbuhan waktu Bubble Sort bersifat kuadratik ($n^2$), sedangkan Merge Sort jauh lebih efisien dan stabil
 
 ## 📝 Kesimpulan
-* [cite_start]**Bubble Sort (Iteratif)** memiliki kompleksitas $O(n^2)$, sehingga **kurang efisien** dan tidak direkomendasikan untuk pengurutan data dalam skala besar[cite: 34].
-* [cite_start]**Merge Sort (Rekursif)** terbukti memiliki kompleksitas $O(n \log n)$ yang **lebih efisien dan stabil** terhadap pertambahan jumlah data[cite: 35].
-* [cite_start]Untuk aplikasi dunia nyata dengan data besar, **Merge Sort** adalah pilihan yang jauh lebih baik dibandingkan Bubble Sort[cite: 37].
+* **Bubble Sort (Iteratif)** memiliki kompleksitas $O(n^2)$, sehingga **kurang efisien** dan tidak direkomendasikan untuk pengurutan data dalam skala besar
+* **Merge Sort (Rekursif)** terbukti memiliki kompleksitas $O(n \log n)$ yang **lebih efisien dan stabil** terhadap pertambahan jumlah data
+* Untuk aplikasi dunia nyata dengan data besar, **Merge Sort** adalah pilihan yang jauh lebih baik dibandingkan Bubble Sort
 * 
-[cite_start]*Referensi Teori: GeeksforGeeks & Big-O Cheat Sheet* [cite: 39, 40]
+*Referensi Teori: GeeksforGeeks & Big-O Cheat Sheet*
